@@ -1,7 +1,7 @@
 # Tic-Tac-Toe_Milestone-project-Game
-# Python Tic Tac Toe Milestone project Game
-from IPython.display import clear_output
+## Python Tic Tac Toe Milestone project Game
 
+from IPython.display import clear_output
 def display_board(board):
     clear_output()
     print('   |   |')
@@ -15,17 +15,15 @@ def display_board(board):
     print('   |   |')
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |')
-
+    
 def player_input():
     marker = ''
     while marker != 'X' and marker != 'O':
         marker = input('Player 1, choose X or O: ').upper()
-    
     if marker == 'X':
         return ('X', 'O')
     else:
         return ('O', 'X')
-
 def place_marker(board, marker, position):
     board[position] = marker
 
